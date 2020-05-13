@@ -1,0 +1,41 @@
+h1, h2{
+    text-align: center;
+    color: white;
+    background: #084B8A;
+    padding: 5px;
+    margin:0px;
+}
+h1 {
+font-size: 4rem;
+}
+body{
+    margin:0px;
+    background: RGB(20, 20, 20);
+}
+.navbar-brand{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+    font-weight: 900;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+a:not([href]) {
+    color:#084B8A;
+}
+div.row {
+    margin-left: 10%;
+    margin-right:10%;
+}
+div.col-sm {
+    border-radius: 25px;
+    margin-left: 5%;
+    margin-right:5%;
+    margin-top: 20px;
+    margin-bottom: -5px;
+    height: 150px;
+}
+
+.vanish {
+    display: inline-table;
+}
