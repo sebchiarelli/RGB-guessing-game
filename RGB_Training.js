@@ -7,6 +7,7 @@ window.addEventListener("load", aléatoire);
 
 //click pour randomiser
 document.querySelector("button").addEventListener("click", aléatoire);
+document.querySelector("label").addEventListener("click", aléatoire);
 
 //event pour la réussite/échec du clique sur boite
 for (let i = 0; i < divs.length; i++) {

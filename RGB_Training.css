@@ -83,3 +83,9 @@ div.cubeCouleur {
 button:focus {
     outline: none;
 }
+#difficulty-border1{
+    box-shadow:none;
+}
+#difficulty-border2{
+    box-shadow:none;
+}
