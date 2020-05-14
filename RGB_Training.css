@@ -15,7 +15,7 @@ body{
 button{
     color: #084B8A;
     border: none;
-    margin-left: auto;
+    margin-left: 20%;
     margin-right: auto;
     font-size: 1rem;
     font-weight: 900;
@@ -23,7 +23,7 @@ button{
     padding-bottom: 0;
 }
 .btn-group, .btn-group-vertical {
-        margin-right: auto;
+        margin-right: 20%;
         margin-left: auto;
 }
 .btn-light{
