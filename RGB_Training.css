@@ -89,3 +89,6 @@ button:focus {
 #difficulty-border2{
     box-shadow:none;
 }
+label button{
+    cursor: pointer;
+}
