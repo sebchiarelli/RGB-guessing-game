@@ -1,12 +1,12 @@
-var divs = document.querySelectorAll("div.col-sm");
+var divs = document.querySelectorAll("div.cubeCouleur");
 var solution = getRandomColor(5);
-var a = document.querySelectorAll("a");
+var inputs = document.querySelectorAll("input");
 
 //initialiser le setup
 window.addEventListener("load", aléatoire);
 
 //click pour randomiser
-document.querySelector("a").addEventListener("click", aléatoire);
+document.querySelector("button").addEventListener("click", aléatoire);
 
 //event pour la réussite/échec du clique sur boite
 for (let i = 0; i < divs.length; i++) {
@@ -16,6 +16,7 @@ for (let i = 0; i < divs.length; i++) {
 //fonction de l'event onclick
 function activation() {
     if (this.classList.contains("TheGoodOne")) {
+        document.querySelector("label").classList.remove("noDisplay");
         //rajouter la couleur du bg des h2 et du h1 qui soit similaire
         document.querySelector("h1").style.backgroundColor = this.style.backgroundColor;
         document.querySelector("h2").style.backgroundColor = this.style.backgroundColor;
@@ -38,7 +39,7 @@ function activation() {
                 divs[i].classList.add("gameOver");
             }
         }
-        document.querySelector("a").innerHTML = "Try again?"
+        document.querySelector("button").innerHTML = "Try again?"
     }
     else if(this.classList.contains("gameOver")){
         
@@ -88,7 +89,7 @@ function mustBeLink(solution) {
 
 //mode hard
 for (let i = 0; i < divs.length; i++) {
-    a[2].addEventListener("click", hard)
+    inputs[1].addEventListener("click", hard)
 }
 function hard(){
     if(document.querySelector("h1").classList.contains("easy")){
@@ -100,7 +101,7 @@ function hard(){
 
 //mode easy
 for (let i = 0; i < divs.length; i++) {
-    a[1].addEventListener("click", easy)
+    inputs[0].addEventListener("click", easy)
 }
 
 
@@ -117,9 +118,10 @@ function easy() {
 
 //remettre le style d'origine sur le titre et le bouton
 function styleBack() {
+    document.querySelector("label").classList.add("noDisplay");
     document.querySelector("h1").style.backgroundColor = "084B8A";
     document.querySelector("h2").style.backgroundColor = "084B8A";
     document.querySelector("h1 + h2").style.backgroundColor = "084B8A";
-    document.querySelector("a").innerHTML = "NEW COLORS"
+    document.querySelector("button").innerHTML = "NEW COLORS"
 }
 

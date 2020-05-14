@@ -12,13 +12,42 @@ body{
     margin:0px;
     background: RGB(20, 20, 20);
 }
-.navbar-brand{
+button{
+    color: #084B8A;
+    border: none;
     margin-left: auto;
     margin-right: auto;
     font-size: 1rem;
     font-weight: 900;
     padding-top: 0;
     padding-bottom: 0;
+}
+.btn-group, .btn-group-vertical {
+        margin-right: auto;
+        margin-left: auto;
+}
+.btn-light{
+    
+    color: #084B8A;
+    border: none;
+    font-size: 1rem;
+    font-weight: 900;
+    padding-top: 0;
+    padding-bottom: 0;  
+}
+.btn-light:hover{
+    color : #084B8A;
+}
+label{
+    color: #084B8A;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    font-size: 1rem;
+    font-weight: 900;
+    padding-top: 0;
+    padding-bottom: 0;  
 }
 a:not([href]) {
     color:#084B8A;
@@ -27,7 +56,7 @@ div.row {
     margin-left: 10%;
     margin-right:10%;
 }
-div.col-sm {
+div.cubeCouleur {
     border-radius: 25px;
     margin-left: 5%;
     margin-right:5%;
@@ -38,4 +67,7 @@ div.col-sm {
 
 .vanish {
     display: inline-table;
+}
+.noDisplay{
+    display:none;
 }
