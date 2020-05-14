@@ -49,6 +49,9 @@ label{
     padding-top: 0;
     padding-bottom: 0;  
 }
+.navbar{
+    padding: 0;
+}
 a:not([href]) {
     color:#084B8A;
 }
@@ -70,4 +73,10 @@ div.cubeCouleur {
 }
 .noDisplay{
     display:none;
+}
+.btn-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show>.btn-light.dropdown-toggle {
+    color: white;
+    margin-top: 0;
+    padding: 0 px;
+    background-color: #084B8A;
 }
