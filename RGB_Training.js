@@ -80,7 +80,7 @@ function mustBeLink(solution) {
         divs[solution].classList.add("TheGoodOne");
     }
 
-    else{solution = getRandomColor(5);
+    else{solution = getRandomColor(6);
     document.querySelector("h1").innerHTML = divs[solution].style.backgroundColor;
     divs[solution].classList.add("TheGoodOne");
     }
