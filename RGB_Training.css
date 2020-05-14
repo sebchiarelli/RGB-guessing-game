@@ -80,3 +80,6 @@ div.cubeCouleur {
     padding: 0 px;
     background-color: #084B8A;
 }
+button:focus {
+    outline: none;
+}
