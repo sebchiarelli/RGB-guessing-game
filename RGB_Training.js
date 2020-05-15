@@ -1,5 +1,5 @@
 var divs = document.querySelectorAll("div.cubeCouleur");
-var solution = getRandomColor(5);
+var solution = getRandomColor(6);
 var inputs = document.querySelectorAll("input");
 
 //initialiser le setup
@@ -16,7 +16,15 @@ for (let i = 0; i < divs.length; i++) {
 
 //fonction de l'event onclick
 function activation() {
-    if (this.classList.contains("TheGoodOne")) {
+    
+    if(this.classList.contains("gameOver")){
+        
+    }
+    else if (this.classList.contains("TheGoodOne")) {
+        for (let i = 0; i < divs.length; i++) {
+            divs[i].classList.add("vanish");
+        }
+
         document.querySelector("label").classList.remove("noDisplay");
         //rajouter la couleur du bg des h2 et du h1 qui soit similaire
         document.querySelector("h1").style.backgroundColor = this.style.backgroundColor;
@@ -27,8 +35,9 @@ function activation() {
                 //couleur de toute les boites = à celle désigner gagnante
                 divs[i].style.backgroundColor = this.style.backgroundColor;
                 //réapparition de toute les boites 
-                divs[i].classList.remove("vanish");
+                divs[i].classList.add("vanish");
                 divs[i].classList.add("gameOver");
+                fadeTimer();
             }
         }
         else{
@@ -36,16 +45,13 @@ function activation() {
                 //couleur de toute les boites = à celle désigner gagnante
                 divs[i].style.backgroundColor = this.style.backgroundColor;
                 //réapparition de toute les boites 
-                divs[i].classList.remove("vanish");
+                divs[i].classList.add("vanish");
                 divs[i].classList.add("gameOver");
+                fadeTimer();
             }
         }
         document.querySelector("button").innerHTML = "Try again?"
     }
-    else if(this.classList.contains("gameOver")){
-        
-    }
-
     else {
         this.classList.add("vanish");
     }
@@ -126,3 +132,21 @@ function styleBack() {
     document.querySelector("button").innerHTML = "NEW COLORS"
 }
 
+function fadeIn(){ 
+        if(document.querySelector("h1").classList.contains("easy")){
+            for (let i = 0; i < 3; i++) {
+                //réapparition de toute les boites 
+                divs[i].classList.remove("vanish");
+            }
+        }
+        else{
+            for (let i = 0; i < divs.length; i++) {
+                //réapparition de toute les boites 
+                divs[i].classList.remove("vanish");
+            }
+        }
+    }
+
+function fadeTimer (){
+    setTimeout(fadeIn, 500);
+}

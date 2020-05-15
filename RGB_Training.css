@@ -67,9 +67,12 @@ div.cubeCouleur {
     margin-bottom: -5px;
     height: 150px;
 }
-
+.cubeCouleur{
+    opacity: 1;
+    transition: opacity 0.5s; 
+}
 .vanish {
-    display: inline-table;
+    opacity: 0;
 }
 .noDisplay{
     visibility:hidden;
