@@ -2,44 +2,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="RGB_Training.css">
-    <title>RGB Game</title>
+    <title>Portfolio Chiarelli Sébastien</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h2>THE GREAT</h2>
-    <h1></h1>
-    <h2>GUESSING GAME</h2>
-    <nav class="navbar bg-light">
-  
-        <button> NEW COLORS</button> 
-        <label class="noDisplay"><button>Bravo!</button></label>  
-        <div class="btn-group btn-group-toggle" difficulty-container data-toggle="buttons">
-          <label class="btn btn-light " id="difficulty-border1">
-            <input type="radio" name="options" id="option1" autocomplete="off" > Easy
-          </label>
-          <label class="btn btn-light active" id="difficulty-border2">
-            <input type="radio" name="options" id="option2" autocomplete="off" checked> Hard
-          </label>
-        </div>
+ <div class="nav">   
+    <nav class="menu">
+        <button>MON PARCOURS</button>
+        <button>MES PROJETS</button>
+        <button class="active">PRÉSENTATION</button>
     </nav>
-    <div class="container">
-        <div class="row">
-          <div class="col cubeCouleur"></div>
-          <div class="col cubeCouleur"></div>
-          <div class="col cubeCouleur"></div>
+</div>
+
+<div class="container vanish">
+    <a href="https://todolisting.netlify.app/" target="_blank">
+        <div class="images quarter1"> 
+            <p class="image-container">Checklist </p><div class="image-container"><img src="img/todolist.JPG" alt=""></div>
+            <p class="paddering">Une petite appli qui sert à noter les tâches à faire. Le contenu est stocké en Local storage, il sera enregistré et restitué même si vous fermez le navigateur ou éteingnez l'ordinateur.</p>
+         </div>
+    </a>
+
+   <a href="https://rgb-guessing-game-xx.netlify.app/" target="_blank">
+         <div class="images quarter2"> 
+            <p class="image-container">RGB game</p><div class="image-container"><img src="img/rgb_game.JPG" alt=""></div>
+            <p class="paddering">Un jeu qui consiste à trouver à quelle case de couleur se rapporte au code RGB en haut de l'ecran. le RGB(red, green, blue) est un système de codage informatique des couleurs.</p>
         </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col cubeCouleur"></div>
-          <div class="col cubeCouleur"></div>
-          <div class="col cubeCouleur"></div>
+    </a>
+    
+    <a href="https://patatap-bi.netlify.app/" target="_blank">
+        <div class="images quarter3"> 
+           <p class="image-container">Patatap</p><div class="image-container"><img src="img/patatap.jpg" alt=""></div>
+            <p class="paddering">Une appli qui associe les touches de clavier à un son enregistré, le tout animé. les librairies paper.js et howler.js ont été utilisé respectivement pour l'animation et les sons</p>
         </div>
-      </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="RGB_Training.js"></script>
+    </a>    
+
+    <a href="https://soeachampionship.netlify.app/" target="_blank">
+        <div class="images quarter4"> 
+            <p class="image-container">Livret de règle</p><div class="image-container"><img src="img/livret.JPG" alt=""></div>
+            <p class="paddering">Un livret de règle que j'ai rédigé, désigné, mis en forme, et animé pour simuler un vrai livre grace à la librairie turn.js</p>
+         </div>
+    </a>
+        
+        <!-- <ul class=""> 
+            <a href="https://todolisting.netlify.app/" target="_blank">Checklist</a><p>Une petite appli qui sert à noter les tâches qu'il faudra faire. Le contenu est stocké en Local storage, ce qui signifie donc qu'il sera enregistré et restitué même si vous fermez le navigateur ou éteingnez l'ordinateur.</p></li>
+            <li><a href="https://rgb-guessing-game-xx.netlify.app/" target="_blank">RGB game</a><p>Un jeu qui consiste à trouver à quelle case de couleur se rapporte au code RGB en haut de l'ecran. le RGB(red, green, blue) est un système de codage informatique des couleurs.</p></li>
+            <li><a href="https://patatap-bi.netlify.app/" target="_blank">Patatap</a><p>Une appli qui associe les touches de clavier à un son enregistré, le tout animé. les librairies paper.js et howler.js ont été utilisé respectivement pour l'animation et les sons</p></li>
+            <li><a href="https://soeachampionship.netlify.app/" target="_blank">Livret de règle</a><p>Un livret de règle que j'ai rédigé, mis en forme, et animé pour simuler un vrai livre grace à la librairie turn.js</p></li>
+        </ul> -->
+    </div>
+<div class="container vanish">
+    <h2>Mes formations</h3>
+    <p>2019-2020- Udemy / Colt Steele  - Web Developer Bootcamp course
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Bootstrap 4</li>
+            <li>DOM Manipulation</li>
+            <li>jQuery</li>
+        </ul>
+    </p>
+    <p>2017-2019- CNAM - Analyste développeur Formation RNCP de niveau 2, interrompue à la 2eme année par manque d'effectif
+        <ul>
+            <li>Langages web et BDD (HTML5, CSS, PHP, JS, MySQL)</li>
+            <li>Projet (site html figé et site PHP dynamique)</li>
+            <li>Réseau</li>
+            <li>Maquette de site et retouche d'image (GIMP, Inkscape)</li>
+        </ul>
+    </p>
+    <p>2013-2015- Faculté d'économie et gestion - Aix en provence - Licence Eco, spécialité Eco-Management interrompue à la 2eme année
+        <ul>
+            <li>Macro-économie</li>
+            <li>Micro-économie</li>
+            <li>Théorie des jeux</li>
+            <li>Statistiques</li>
+            <li>Comptabilité</li>
+            <li>Calculs matriciels</li>
+            <li>fonction Cobb-Douglas</li>
+        </ul>
+    </p>
+
+    <p>2012- Lycée méditerranée - La Ciotat - Obtention du Bac Economique et social, Spécialité Eco</p>
+
+    <h2>Expériences professionnelles</h3>
+        
+        <p>2014-2019- La poste- Marseille 11e et 13e, Aubagne, La Ciotat,
+        Carnoux, Cassis- Gestionnaire de clientèle
+        Plus d'une quinzaine de missions en tant qu'intérimaire allant de 3 mois à
+        quelques jours.
+        Accueil, conseils, services aux clients dans les domaines bancaire, courrier
+        et téléphonie. Travail alimentaire qui m'a permis de poursuivre dans la voie du développement</p>
+       <!--  Un peu plus sur moi:
+        Voyage en Norvège et en Sicile.
+        Road trip, moto en général.
+        Lecture: 'Les archives de roshar' de Sanderson.
+        Passionné de jeux vidéos (World of Warcraft, Red Alert3, M&B), et de jeu
+        de rôle (D&D, Shadowrun, Numenéra). -->
+</div>
+<div class="container">
+    <h1>CHIARELLI Sébastien</h1>
+    <p>YO</p>
+</div>
+<script src="js/portfolio.js"></script>
 </body>
 </html>
